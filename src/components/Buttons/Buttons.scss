@@ -1,0 +1,17 @@
+@use '../../styles/partials/variables' as *;
+
+button{
+background-color:$BrainFlix-Blue ;
+width: 100%;
+padding: 10px;
+background-repeat: no-repeat;
+border-radius: 4px;
+height: 40px;
+color: $White;
+border: none;
+background-position: 0.5rem;
+
+&:hover{
+background-color: $Brainflix-Darkblue;
+}
+}
