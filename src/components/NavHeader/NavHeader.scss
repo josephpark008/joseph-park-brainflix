@@ -1,0 +1,40 @@
+@use "../../styles/partials/variables" as *;
+.nav {
+  padding: $padding-b-h;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  &__logo {
+    margin-bottom: 12px;
+    width: 40%;
+  }
+
+  &__avatar {
+    object-fit: cover;
+    border-radius: 100px;
+    width: 36px;
+    height: 36px;
+  }
+
+  &__search {
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: 0.5rem;
+    width: 80%;
+    margin-right: 15px;
+    border-radius: 4px;
+    height: 36px;
+    background-color: #fafafa;
+    border: solid 1px $Mercury;
+    &::placeholder {
+      padding-left: 30px;
+      font-size: 11px;
+      color: $BrainFlix-Black;
+    }
+  }
+
+  &__upload-button {
+    width: 100%;
+    margin-top: 12px;
+  }
+}
