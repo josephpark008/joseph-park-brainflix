@@ -1,11 +1,11 @@
-import { VideoList } from "./components/VideoList/VideoList";
+import VideoList from "./components/VideoQue/VideoList/VideoList";
 import NavHeader from "./components/NavHeader/NavHeader";
-import CommentsSection from "./components/CommentsSection/CommentsSection";
-import VideoPlayer from "./components/Videoplayer/VideoPlayer";
+import CommentsSection from "./components/CommentsFolder/CommentsSection/CommentsSection";
+import VideoPlayer from "./components/VideoActive/Videoplayer/VideoPlayer";
 import { useState } from "react";
 import VideoDetails from "./Data/video-details.json";
-import VideoInfo from "./components/VideoInfo/VideoInfo";
-import './App.scss';
+import VideoInfo from "./components/VideoActive/VideoInfo/VideoInfo";
+import "./App.scss";
 export function App() {
   const [CurrentVideo, setCurrentVideo] = useState(VideoDetails[0]);
 
@@ -13,12 +13,10 @@ export function App() {
     <>
       <NavHeader />
       <VideoPlayer image={CurrentVideo.image} />
-
-      <VideoInfo key={CurrentVideo.id} videoData={CurrentVideo} />
-      
-
-      
-      <CommentsSection />
+      <div className="video-playing">
+        <VideoInfo key={CurrentVideo.id} videoData={CurrentVideo} />
+        <CommentsSection />
+      </div>
       <VideoList />
     </>
   );

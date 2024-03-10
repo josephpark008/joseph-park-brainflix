@@ -11,13 +11,14 @@ export default function ({ commentData, className }) {
   return (
     <div className={className}>
       <div className="comments__blank-avatar"></div>
-      <div>
-        <p className="comments__name">{commentData.name}</p>
-        <p className="comments__date">{date}</p>
-        <p className="comments__text">{commentData.comment}</p>
+      <div className='comments-info'>
+        <div className='comments-details'>
+        <p className="comments-details__name">{commentData.name}</p>
+        <p className="comments-details__date">{date}</p>
+        </div>
+        <p className="comments-info__text">{commentData.comment}</p>
         
       </div>
-      <p></p>
     </div>
   );
 }

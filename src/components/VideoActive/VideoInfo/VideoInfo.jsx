@@ -1,6 +1,6 @@
-import VideoDetails from "../../Data/video-details.json";
-import ViewsIcon from '../../assets/Icons/views.svg';
-import LikesIcon from '../../assets/Icons/likes.svg';
+import VideoDetails from "../../../Data/video-details.json";
+import ViewsIcon from '../../../assets/Icons/views.svg';
+import LikesIcon from '../../../assets/Icons/likes.svg';
 import './VideoInfo.scss';
 
 export default function VideoInfo(props) {
@@ -39,7 +39,7 @@ export default function VideoInfo(props) {
 
       </div>
 
-      <p>{description}</p>
+      <p className="video-info__descript">{description}</p>
     </div>
   );
 }

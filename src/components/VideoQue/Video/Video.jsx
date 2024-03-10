@@ -1,5 +1,5 @@
 import "./Video.scss";
-export function Video(props) {
+export default function Video(props) {
   const video = props.videoData;
 
   return (

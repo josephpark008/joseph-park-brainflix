@@ -1,6 +1,6 @@
 import VideoInfo from "../VideoInfo/VideoInfo";
 import "./VideoPlayer.scss";
-import VideoDetails from "../../Data/video-details.json";
+import VideoDetails from "../../../Data/video-details.json";
 
 export default function VideoPlayer({ image }) {
   return (
