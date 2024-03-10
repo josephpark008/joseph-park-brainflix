@@ -1,30 +1,3 @@
-//DESKTOP AND TABLET (dt) TYPE KIT
-
-@mixin PH-dt() {
-line-height: 44px;
-font-size: 33px;
-}
-
-@mixin SH-dt() {
-line-height: 20px;
-font-size: 12px;
-}
-
-@mixin Sh-dt() {
-line-height: 22px;
-font-size: 14px;
-}
-
-@mixin BC-dt() {
-line-height: 22px;
-font-size: 14px;
-}
-
-@mixin LB-dt() {
-line-height: 20 px;
-font-size: 12px;
-}
-
 //MOBILE (m) TYPEKIT
 
 @mixin PG-m(){
@@ -50,5 +23,32 @@ font-size: 13px;
 @mixin LB-m(){
 line-height: 20px;
 font-size: 10px;
+}
+
+//DESKTOP AND TABLET (dt) TYPE KIT
+
+@mixin PH-dt() {
+line-height: 44px;
+font-size: 33px;
+}
+
+@mixin SH-dt() {
+line-height: 20px;
+font-size: 12px;
+}
+
+@mixin Sh-dt() {
+line-height: 22px;
+font-size: 14px;
+}
+
+@mixin BC-dt() {
+line-height: 22px;
+font-size: 14px;
+}
+
+@mixin LB-dt() {
+line-height: 20 px;
+font-size: 12px;
 }
 

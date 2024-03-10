@@ -1,0 +1,14 @@
+.video {
+  padding: 0;
+  &__poster {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+//TABLET
+@media screen and (min-width: 768px) {
+.video{
+width: 100%;
+}
+
+}

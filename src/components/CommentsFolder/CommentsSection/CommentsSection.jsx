@@ -1,8 +1,8 @@
 import "./CommentsSection.scss";
-import avatar from "../../assets/Images/Mohan-muruge.jpg";
-import CommentsList from '../CommentsList/CommentsList';
-import Buttons from "../Buttons/Buttons";
-import commentIcon from '../../assets/Icons/add_comment.svg';
+import avatar from "../../../assets/Images/Mohan-muruge.jpg";
+import CommentsList from "../CommentsList/CommentsList";
+import Buttons from "../../Buttons/Buttons";
+import commentIcon from '../../../assets/Icons/add_comment.svg';
 
 export default function CommentsSection() {
   return (
@@ -15,8 +15,6 @@ export default function CommentsSection() {
         <textarea className="comment-make__input"
           name=""
           id=""
-          cols="25"
-          rows="5"
           placeholder="Add a new comment"
         ></textarea>
         <Buttons ButtonClass='comment-button' ButtonText='COMMENT' ButtonIcon={commentIcon}/>

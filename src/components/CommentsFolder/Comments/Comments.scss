@@ -1,0 +1,94 @@
+@use "../../../styles/partials/variables" as *;
+@use "../../../styles/partials/mixins" as *;
+.comment {
+  border-top: 1px solid $Silver;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.last-comment {
+  border-top: 1px solid $Silver;
+  border-bottom: 1px solid $Silver;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.comments-details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  &__date {
+    margin: 0 0 10px 0;
+    color: $Silver;
+    @include BC-m;
+  }
+  &__name {
+    margin: 0;
+    @include BC-m;
+    font-weight: 600;
+    color: $BrainFlix-Black;
+  }
+}
+
+.comments-info {
+  width: 80%;
+  &__text {
+    margin: 0;
+    width: 100%;
+    @include BC-m;
+    color: $BrainFlix-Black;
+  }
+}
+
+.comments__blank-avatar {
+  border-radius: 100px;
+  width: 36px;
+  height: 36px;
+  background-color: $Mercury;
+  margin-right: 15px;
+}
+
+//TABLET
+@media screen and (min-width: 768px) {
+  .comments-info {
+    width: 92%;
+
+    &__text {
+      @include BC-dt;
+      width: 97%;
+    }
+  }
+}
+
+.comments-details {
+  &__name {
+    @include BC-dt;
+  }
+}
+
+//DESKTOP
+@media screen and (min-width: 1280px) {
+  .comment,
+  .last-comment {
+    padding-right: 20px;
+  }
+  .comments-info {
+    width: 90%;
+
+    &__text {
+      width: 100%;
+    }
+  }
+  .comments__blank-avatar {
+    margin-right: 30px;
+  }
+
+  .last-comment {
+    border-bottom: none;
+  }
+}

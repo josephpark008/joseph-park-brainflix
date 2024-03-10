@@ -1,0 +1,56 @@
+@use "../../../styles/partials/mixins" as *;
+@use "../../../styles/partials/variables" as *;
+
+.video {
+  display: flex;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: 12px;
+  &__image {
+    width: 37%;
+    height: 100%;
+    border-radius: 5px;
+  }
+}
+
+.video-text {
+  padding-bottom: 3px;
+  padding-top: 3px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: $BrainFlix-Black;
+  &__title {
+    margin: 0;
+    font-size: 12px;
+  }
+
+  &__creator {
+    margin: 0;
+    font-size: 12px;
+  }
+}
+
+//TABLET
+
+@media screen and (min-width: 768px) {
+  .video-text {
+    &__title {
+      @include SH-dt;
+      line-height: 18px;
+    }
+
+    &__creator {
+      @include SH-dt;
+    }
+  }
+}
+
+//DESKTOP
+@media screen and (min-width: 1280px) {
+  .video {
+    width: 30%;
+    margin-top: 20px;
+  }
+}
