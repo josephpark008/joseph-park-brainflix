@@ -1,16 +1,16 @@
 @use "../../../styles/partials/variables" as *;
 @use "../../../styles/partials/mixins" as *;
 .comment {
-  border-top: 1px solid $Silver;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  border-top: 1px solid $Mercury;
+  padding-top: $padding-a-h;
+  padding-bottom: $padding-a-h;
   display: flex;
   flex-wrap: wrap;
 }
 
 .last-comment {
-  border-top: 1px solid $Silver;
-  border-bottom: 1px solid $Silver;
+  border-top: 1px solid $Mercury;
+  border-bottom: 1px solid $Mercury;
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
@@ -50,7 +50,7 @@
   width: 36px;
   height: 36px;
   background-color: $Mercury;
-  margin-right: 15px;
+  margin-right: $padding-a-h;
 }
 
 //TABLET
@@ -75,7 +75,7 @@
 @media screen and (min-width: 1280px) {
   .comment,
   .last-comment {
-    padding-right: 20px;
+    padding: $padding-a-h 20px $padding-a-h 0;
   }
   .comments-info {
     width: 90%;

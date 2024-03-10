@@ -6,8 +6,15 @@ import { useState } from "react";
 import VideoDetails from "./Data/video-details.json";
 import VideoInfo from "./components/VideoActive/VideoInfo/VideoInfo";
 import "./App.scss";
+
 export function App() {
   const [CurrentVideo, setCurrentVideo] = useState(VideoDetails[0]);
+  // const [selectedScientist, setSelectedScientist] = useState(details[1]);
+  function getVideoFromId(id) {
+    const detail = VideoDetails.find((deet) => deet.id === id);
+    // console.log(detail);
+    setCurrentVideo(detail);
+  }
 
   return (
     <>
@@ -17,7 +24,10 @@ export function App() {
         <VideoInfo key={CurrentVideo.id} videoData={CurrentVideo} />
         <CommentsSection />
       </div>
-      <VideoList />
+      <VideoList
+        videos={VideoDetails.filter((video) => video.id !== CurrentVideo.id)}
+        setVideo={getVideoFromId}
+      />
     </>
   );
 }
