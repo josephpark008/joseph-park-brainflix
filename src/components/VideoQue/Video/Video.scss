@@ -3,7 +3,6 @@
 
 .video {
   display: flex;
-  padding: 10px;
   box-sizing: border-box;
   margin-top: 12px;
   &__image {
@@ -23,12 +22,12 @@
   color: $BrainFlix-Black;
   &__title {
     margin: 0;
-    font-size: 12px;
+    @include SH-m;
   }
 
   &__creator {
     margin: 0;
-    font-size: 12px;
+    @include SH-m;
   }
 }
 

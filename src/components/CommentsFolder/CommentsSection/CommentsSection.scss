@@ -37,6 +37,7 @@
     margin: 0;
     margin-bottom: 2px;
     color: $Silver;
+    font-weight: 600;
   }
 
   &__input {
@@ -71,6 +72,10 @@
     display: flex;
     flex-wrap: wrap;
     width: 92.5%;
+
+    &__header {
+      font-size: 11px;
+    }
     &__input {
       width: 70%;
       padding: 8px 0 0px 15px;
