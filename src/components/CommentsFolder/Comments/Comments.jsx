@@ -1,8 +1,9 @@
-import './Comments.scss';
+import "./Comments.scss";
 
 export default function ({ commentData, className }) {
+  const { name, timestamp, comment } = commentData;
   //Convert timestamp into proper date format
-  const today = new Date(commentData.timestamp);
+  const today = new Date(timestamp);
   const d = today.getDate();
   const m = today.getMonth() + 1;
   const y = today.getFullYear();
@@ -11,13 +12,12 @@ export default function ({ commentData, className }) {
   return (
     <div className={className}>
       <div className="comments__blank-avatar"></div>
-      <div className='comments-info'>
-        <div className='comments-details'>
-        <p className="comments-details__name">{commentData.name}</p>
-        <p className="comments-details__date">{date}</p>
+      <div className="comments-info">
+        <div className="comments-details">
+          <p className="comments-details__name">{name}</p>
+          <p className="comments-details__date">{date}</p>
         </div>
-        <p className="comments-info__text">{commentData.comment}</p>
-        
+        <p className="comments-info__text">{comment}</p>
       </div>
     </div>
   );

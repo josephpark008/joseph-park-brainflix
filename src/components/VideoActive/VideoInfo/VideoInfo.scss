@@ -12,7 +12,6 @@
 
   &__descript {
     @include BC-m;
-    font-size: 14px;
     color: $BrainFlix-Black;
     margin: $padding-a-h 0 $padding-a-h 0;
   }
@@ -143,23 +142,21 @@
 
 //DESKTOP
 @media screen and (min-width: 1280px) {
+  .video-info {
+    width: 92%;
+    padding-left: 100px;
+    padding-right: 0;
 
-.video-info{
-width: 92%;
-padding-left: 100px;
-padding-right: 0;
+    &__header {
+      margin-top: $padding-b-h;
+    }
+    &__descript {
+      padding-right: 20px;
+      margin-bottom: 20px;
+    }
+  }
 
-&__header{
-margin-top: 35px;
-}
-&__descript{
-padding-right: 20px;
-margin-bottom: 20px;
-}
-}
-
-.video-details{
-padding-right: 20px;
-}
-
+  .video-details {
+    padding-right: 20px;
+  }
 }
