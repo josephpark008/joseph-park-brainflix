@@ -1,37 +1,28 @@
 @use "../../../styles/partials/variables" as *;
 @use "../../../styles/partials/mixins" as *;
 .comment {
-  border-top: 1px solid $Mercury;
   padding-top: $padding-a-h;
   padding-bottom: $padding-a-h;
-  display: flex;
   flex-wrap: wrap;
 }
 
 .last-comment {
-  border-top: 1px solid $Mercury;
   border-bottom: 1px solid $Mercury;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  display: flex;
+  padding: 10px 0 10px 0;
   flex-wrap: wrap;
 }
 
 .comments-details {
-  display: flex;
   justify-content: space-between;
   width: 100%;
 
   &__date {
     margin: 0 0 10px 0;
-    color: $Silver;
     @include BC-m;
   }
   &__name {
     margin: 0;
     @include BC-m;
-    font-weight: 600;
-    color: $BrainFlix-Black;
   }
 }
 
@@ -41,7 +32,6 @@
     margin: 0;
     width: 100%;
     @include BC-m;
-    color: $BrainFlix-Black;
   }
 }
 
@@ -54,7 +44,7 @@
 }
 
 //TABLET
-@media screen and (min-width: 768px) {
+@include tablet {
   .comments-info {
     width: 92%;
 
@@ -72,10 +62,11 @@
 }
 
 //DESKTOP
-@media screen and (min-width: 1280px) {
+@include desktop {
   .comment,
   .last-comment {
     padding: $padding-a-h 20px $padding-a-h 0;
+    width: 97%;
   }
   .comments-info {
     width: 90%;

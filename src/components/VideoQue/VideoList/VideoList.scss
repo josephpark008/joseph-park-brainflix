@@ -1,19 +1,16 @@
 @use "../../../styles/partials/mixins" as *;
 @use "../../../styles/partials/variables" as *;
 .video-list {
-  padding-right: 16px;
-  padding-left: 16px;
+  padding: 0 16px 0 16px;
   margin-bottom: 40px;
   &__header {
     font-size: 12px;
-    color: $Silver;
     margin: 20px 0 20px 0;
-    font-weight: 600;
   }
 }
 
 //TABLET
-@media screen and (min-width: 768px) {
+@include tablet {
   .video-list {
     width: 43%;
     padding: 0;
@@ -25,10 +22,9 @@
 }
 
 //DESKTOP
-@media screen and (min-width: 1280px) {
+@include desktop {
   .video-list {
-    padding: 0;
-    padding-left: 20px;
+    padding: 0 0 0 20px;
     width: 24%;
     border-left: 1px solid $Silver;
 

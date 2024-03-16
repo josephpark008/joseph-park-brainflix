@@ -1,7 +1,7 @@
-import VideoDetails from "../../../Data/video-details.json";
 import ViewsIcon from "../../../assets/Icons/views.svg";
 import LikesIcon from "../../../assets/Icons/likes.svg";
 import "./VideoInfo.scss";
+import '../../../styles/global.scss';
 
 export default function VideoInfo(props) {
   const { videoData } = props;

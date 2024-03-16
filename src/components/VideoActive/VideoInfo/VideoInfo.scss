@@ -1,5 +1,6 @@
 @use "../../../styles/partials/mixins" as *;
 @use "../../../styles/partials/variables" as *;
+
 .video-info {
   padding-left: $padding-h;
   padding-right: $padding-h;
@@ -7,20 +8,16 @@
   &__header {
     @include PG-m;
     font-weight: 700;
-    color: $BrainFlix-Black;
   }
 
   &__descript {
     @include BC-m;
-    color: $BrainFlix-Black;
     margin: $padding-a-h 0 $padding-a-h 0;
   }
 }
 
 .video-details {
-  display: flex;
   border-bottom: 1px solid $Mercury;
-  border-top: 1px solid $Mercury;
   padding: $padding-h 0 $padding-h 0;
 }
 
@@ -29,19 +26,15 @@
     margin: 0;
     margin-bottom: 10px;
     @include BC-m;
-    font-weight: 600;
-    color: $BrainFlix-Black;
   }
 
   &__date {
     margin: 0;
     @include BC-m;
-    color: $Silver;
   }
 }
 
 .video-numbers {
-  display: flex;
   flex-direction: column;
   width: 40%;
   margin-left: 30px;
@@ -49,24 +42,20 @@
 
 .view-details {
   width: 100%;
-  display: flex;
   height: 30%;
   margin-bottom: 10px;
   &__icon {
     width: 25px;
   }
   &__count {
-    margin: 0;
-    margin-left: 5px;
+    margin: 0 0 0 5px;
     width: 50%;
     @include BC-m;
-    color: $Silver;
   }
 }
 
 .likes-details {
   width: 100%;
-  display: flex;
   height: 35%;
 
   &__icon {
@@ -82,10 +71,9 @@
 }
 
 //TABLET
-@media screen and (min-width: 768px) {
+@include tablet {
   .video-info {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0 30px 0 30px;
     &__header {
       font-size: 34px;
     }
@@ -98,8 +86,7 @@
   .video-details {
     align-items: center;
     border-top: none;
-    padding: 0;
-    padding-bottom: 10px;
+    padding: 0 0 10px 0;
     justify-content: space-between;
   }
 
@@ -141,11 +128,10 @@
 }
 
 //DESKTOP
-@media screen and (min-width: 1280px) {
+@include desktop {
   .video-info {
-    width: 92%;
-    padding-left: 100px;
-    padding-right: 0;
+    width: 91.6%;
+    padding: 0 0 0 100px;
 
     &__header {
       margin-top: $padding-b-h;

@@ -2,9 +2,10 @@
 @use "../../../styles/partials/variables" as *;
 
 .video {
-  display: flex;
   box-sizing: border-box;
   margin-top: 12px;
+  text-decoration: none;
+
   &__image {
     width: 37%;
     height: 100%;
@@ -13,13 +14,10 @@
 }
 
 .video-text {
-  padding-bottom: 3px;
-  padding-top: 3px;
+  padding: 3px 0 3px 0;
   margin-left: 20px;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: $BrainFlix-Black;
   &__title {
     margin: 0;
     @include SH-m;
@@ -33,7 +31,7 @@
 
 //TABLET
 
-@media screen and (min-width: 768px) {
+@include tablet {
   .video-text {
     &__title {
       @include SH-dt;
@@ -47,7 +45,7 @@
 }
 
 //DESKTOP
-@media screen and (min-width: 1280px) {
+@include desktop {
   .video {
     margin-top: 20px;
     padding: 0;

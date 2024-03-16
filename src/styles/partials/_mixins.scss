@@ -1,54 +1,67 @@
 //MOBILE (m) TYPEKIT
 
-@mixin PG-m(){
-line-height: 32px;
-font-size: 24px;
+@mixin PG-m() {
+  line-height: 32px;
+  font-size: 24px;
 }
 
-@mixin SH-m(){
-line-height: 20px;
-font-size: 12px;
+@mixin SH-m() {
+  line-height: 20px;
+  font-size: 12px;
 }
 
-@mixin Sh-m(){
-line-height: 18px;
-font-size: 13px;
+@mixin Sh-m() {
+  line-height: 18px;
+  font-size: 13px;
 }
 
-@mixin BC-m(){
-line-height: 18px;
-font-size: 13px;
+@mixin BC-m() {
+  line-height: 18px;
+  font-size: 13px;
 }
 
-@mixin LB-m(){
-line-height: 20px;
-font-size: 10px;
+@mixin LB-m() {
+  line-height: 20px;
+  font-size: 10px;
 }
 
 //DESKTOP AND TABLET (dt) TYPE KIT
 
 @mixin PH-dt() {
-line-height: 44px;
-font-size: 33px;
+  line-height: 44px;
+  font-size: 33px;
 }
 
 @mixin SH-dt() {
-line-height: 20px;
-font-size: 12px;
+  line-height: 20px;
+  font-size: 12px;
 }
 
 @mixin Sh-dt() {
-line-height: 22px;
-font-size: 14px;
+  line-height: 22px;
+  font-size: 14px;
 }
 
 @mixin BC-dt() {
-line-height: 22px;
-font-size: 14px;
+  line-height: 22px;
+  font-size: 14px;
 }
 
 @mixin LB-dt() {
-line-height: 20 px;
-font-size: 12px;
+  line-height: 20 px;
+  font-size: 12px;
+}
+
+//BREAKPOINTS
+@mixin tablet() {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media screen and (min-width: 1280px) {
+    @content;
+  }
 }
 

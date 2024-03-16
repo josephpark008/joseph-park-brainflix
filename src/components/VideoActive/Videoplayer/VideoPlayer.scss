@@ -1,3 +1,7 @@
+@use '../../../styles/partials/mixins' as *;
+@use '../../../styles/global.scss';
+@use '../../../styles/partials/variables' as *;
+
 .video-active {
   padding: 0;
   &__poster {
@@ -6,7 +10,7 @@
   }
 }
 //TABLET
-@media screen and (min-width: 768px) {
+@include tablet {
   .video-active {
     width: 100%;
     background-color: black;
@@ -19,7 +23,7 @@
 }
 
 //DESKTOP
-@media screen and (min-width: 1280px) {
+@include desktop {
   .video-active {
     background-color: black;
     &__poster {
