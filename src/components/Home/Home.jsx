@@ -1,9 +1,9 @@
-import VideoList from "./components/VideoQue/VideoList/VideoList";
-import CommentsSection from "./components/CommentsFolder/CommentsSection/CommentsSection";
-import VideoPlayer from "./components/VideoActive/Videoplayer/VideoPlayer";
+import VideoList from "../VideoQue/VideoList/VideoList";
+import CommentsSection from "../CommentsFolder/CommentsSection/CommentsSection";
+import VideoPlayer from "../VideoActive/Videoplayer/VideoPlayer";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import VideoInfo from "./components/VideoActive/VideoInfo/VideoInfo";
+import VideoInfo from "../VideoActive/VideoInfo/VideoInfo";
 import { useParams } from "react-router-dom";
 
 export default function Home() {
@@ -35,7 +35,9 @@ export default function Home() {
     const fetchVideosDetails = async () => {
       try {
         const response = await axios.get(
-          `${baseUrl}videos/${id || "84e96018-4022-434e-80bf-000ce4cd12b8"}?api_key=${apiKey}`
+          `${baseUrl}videos/${
+            id || "84e96018-4022-434e-80bf-000ce4cd12b8"
+          }?api_key=${apiKey}`
         );
         setVideoDetails(response.data);
       } catch (error) {
@@ -45,10 +47,6 @@ export default function Home() {
     //call function to access videoDetailsData
     fetchVideosDetails();
   }, [id]);
-
-  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
 
   if (!videoDetails) {
     return <div>loading...</div>;
