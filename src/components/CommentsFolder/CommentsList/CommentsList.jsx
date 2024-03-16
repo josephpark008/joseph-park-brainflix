@@ -1,4 +1,3 @@
-import CommentArray from "../../../Data/video-details.json";
 import Comments from "../Comments/Comments";
 
 export default function CommentsList(props) {

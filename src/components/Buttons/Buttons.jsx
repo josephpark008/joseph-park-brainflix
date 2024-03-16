@@ -1,9 +1,8 @@
 import "./Buttons.scss";
 
-export default function Buttons({ButtonText, ButtonIcon, ButtonClass}) {
+export default function Buttons({ButtonText, ButtonIcon, ButtonWidth, handleClick}) {
   return (
-    <>
-      <button className={ButtonClass} style={{ backgroundImage: `url(${ButtonIcon})` }}>{ButtonText}</button>
-    </>
+      <button onClick={handleClick} className={`action-button action-button--${ButtonText}`} style={{ backgroundImage: `url(${ButtonIcon})` }}>{ButtonText}</button>
   );
 }
+

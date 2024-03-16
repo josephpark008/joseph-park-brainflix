@@ -1,15 +1,17 @@
 @use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
 
-button{
+.action-button{
 background-color:$BrainFlix-Blue ;
 width: 100%;
-padding: 10px;
+padding: 11px;
 background-repeat: no-repeat;
 border-radius: 4px;
 color: $White;
 border: none;
 background-position: 0.5rem;
 background-size: 20px;
+@include LB-dt; 
 
 &:hover{
 background-color: $Brainflix-Darkblue;

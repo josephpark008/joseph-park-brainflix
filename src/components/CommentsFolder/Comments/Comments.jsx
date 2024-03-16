@@ -1,4 +1,5 @@
 import "./Comments.scss";
+import '../../../styles/global.scss';
 
 export default function ({ commentData, className }) {
   const { name, timestamp, comment } = commentData;
