@@ -1,11 +1,9 @@
-import NavHeader from "./components/NavHeader/NavHeader";
-import UploadImage from "./assets/Images/Upload-video-preview.jpg";
-import Buttons from "./components/Buttons/Buttons";
-import PublishIcon from "./assets/Icons/publish.svg";
+import UploadImage from "../../assets/Images/Upload-video-preview.jpg";
+import Buttons from "../../components/Buttons/Buttons";
+import PublishIcon from "../../assets/Icons/publish.svg";
 import "./Upload.scss";
-import "./styles/global.scss";
+import "../../styles/global.scss";
 import { useState } from "react";
-import './styles/global.scss';
 
 
 export default function Upload() {
