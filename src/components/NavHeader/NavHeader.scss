@@ -1,6 +1,7 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
 
+//MOBILE
 .nav {
   padding: $padding-h $padding-h $padding-h $padding-h;
   flex-wrap: wrap;

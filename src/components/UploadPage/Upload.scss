@@ -1,6 +1,7 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
 
+//MOBILE
 .video-thumbnail__label,
 .video-title__label,
 .video-descript__label {
@@ -60,6 +61,7 @@
   background-size: 20px;
 }
 
+//TABLET
 @include tablet {
   .upload-section {
     padding: 0 35px 0 35px;
@@ -104,6 +106,7 @@
   }
 }
 
+//DESKTOP
 @include desktop {
   .upload-section {
     flex-wrap: wrap;

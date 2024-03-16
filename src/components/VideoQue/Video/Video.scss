@@ -1,6 +1,7 @@
 @use "../../../styles/partials/mixins" as *;
 @use "../../../styles/partials/variables" as *;
 
+//MOBILE
 .video {
   box-sizing: border-box;
   margin-top: 12px;
@@ -30,7 +31,6 @@
 }
 
 //TABLET
-
 @include tablet {
   .video-text {
     &__title {
