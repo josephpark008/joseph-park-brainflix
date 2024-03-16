@@ -14,8 +14,6 @@ export default function Home() {
 
   const { id } = useParams();
 
-  console.log(videos, videoDetails);
-
   useEffect(() => {
     //Fetching videos data
     const fetchVideoData = async () => {
