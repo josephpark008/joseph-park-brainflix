@@ -13,7 +13,6 @@ export default function VideoInfo(props) {
   const m = today.getMonth() + 1;
   const y = today.getFullYear();
   const date = `${m}/${d}/${y}`;
-  console.log({ today });
 
   return (
     <div className="video-info">
